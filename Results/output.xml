@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.11.1 on win32)" generated="2024-05-06T15:13:09.920341" rpa="false" schemaversion="5">
+<suite id="s1" name="Login" source="D:\Learn\Automation_Testing\github\Altoro\Execute-Test-cases-in-Robotframework-using-batch-file\Tests\login.robot">
+<test id="s1-t1" name="Sign In" line="11">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-05-06T15:13:10.165858" level="INFO">Opening browser 'edge' to base url 'http://altoro.testfire.net/'.</msg>
+<msg time="2024-05-06T15:13:10.180199" level="INFO">Applicable driver not found; attempting to install with Selenium Manager (Beta)</msg>
+<arg>${website}</arg>
+<arg>edge</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-05-06T15:13:10.165858" elapsed="2.680060"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-05-06T15:13:12.847915" elapsed="0.067961"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-06T15:13:12.916886" level="INFO">Clicking element 'xpath://*[@id="LoginLink"]/font'.</msg>
+<arg>xpath://*[@id="LoginLink"]/font</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-06T15:13:12.916886" elapsed="0.301805"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Online Banking Login</arg>
+<arg>10</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-05-06T15:13:13.219194" elapsed="0.014516"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-06T15:13:13.234708" level="INFO">Typing text 'admin' into text field 'xpath://input[contains(@name,'uid')]'.</msg>
+<arg>xpath://input[contains(@name,'uid')]</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-06T15:13:13.233710" elapsed="0.187366"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-06T15:13:13.424208" level="INFO">Typing text 'admin' into text field 'xpath://input[contains(@id,'passw')]'.</msg>
+<arg>xpath://input[contains(@id,'passw')]</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-06T15:13:13.423087" elapsed="0.111586"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-06T15:13:13.535693" level="INFO">Clicking element 'xpath://input[contains(@name,'btnSubmit')]'.</msg>
+<arg>xpath://input[contains(@name,'btnSubmit')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-06T15:13:13.535693" elapsed="0.474163"/>
+</kw>
+<doc>This test case sign in the user to Altoro website</doc>
+<status status="PASS" start="2024-05-06T15:13:10.164855" elapsed="3.847075"/>
+</test>
+<test id="s1-t2" name="Validate login" line="38">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Hello Admin User</arg>
+<arg>10</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-05-06T15:13:14.022418" elapsed="0.073126"/>
+</kw>
+<doc>This test case validates that the user has signed in successfully
+and the welcome message is displayed</doc>
+<status status="PASS" start="2024-05-06T15:13:14.014934" elapsed="0.081610"/>
+</test>
+<test id="s1-t3" name="closebrowser" line="46">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-06T15:13:14.101543" elapsed="2.184662"/>
+</kw>
+<doc>This test case closes the browser</doc>
+<status status="PASS" start="2024-05-06T15:13:14.099543" elapsed="2.187846"/>
+</test>
+<status status="PASS" start="2024-05-06T15:13:09.922354" elapsed="6.370032"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="0" skip="0" id="s1" name="Login">Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
