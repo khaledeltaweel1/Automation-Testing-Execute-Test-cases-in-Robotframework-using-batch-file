@@ -20,7 +20,7 @@ To execute test cases in `login.robot` file follow the below steps :
 
 1- Create a batch file and name it `login.bat'
 
-2- Open `login.bat' in your text editor
+2- Open `login.bat` in your text editor
 
 3- Add the following script that goes to the project directory and execute the test file `login.robot`
 
