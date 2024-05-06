@@ -18,7 +18,7 @@ The test file `login.robot` in the Tests folder contains 3 test cases which are 
 # Exection
 To execute test cases in `login.robot` file follow the below steps :
 
-1- Create a batch file and name it `login.bat'
+1- Create a batch file and name it `login.bat`
 
 2- Open `login.bat` in your text editor
 
